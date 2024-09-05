@@ -55,10 +55,10 @@ height: 100vh;
 }
 .iconnav{
     font-size: 30px;
-    color: black
+    color: black;
     left: 0;
       /* for nav bar 250 */
-    position: relative;
+
     z-index: 99999px;
 }
 
