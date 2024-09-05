@@ -43,8 +43,9 @@ function CountDown(PartyDate)
         CountDown(PartyDate);
       }, 1000);
 }
-// CountDown(PartyDate);
+CountDown(PartyDate);
 clearInterval(CountDown);
+
  let text = document.getElementById("TextArea");
  let Hundred ;
  let RemainngChar = document.getElementById("RemainngChar");
