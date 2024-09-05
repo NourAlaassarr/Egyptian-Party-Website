@@ -10,7 +10,9 @@
 
 // })
 
-
+$('.iconnav').click(function(){
+    alert("hello");
+})
 
 //Singer details
 $(".singernumbers").click(function(){
@@ -43,8 +45,8 @@ function CountDown(PartyDate)
         CountDown(PartyDate);
       }, 1000);
 }
-CountDown(PartyDate);
-clearInterval(CountDown);
+// CountDown(PartyDate);
+// clearInterval(CountDown);
 
  let text = document.getElementById("TextArea");
  let Hundred ;
