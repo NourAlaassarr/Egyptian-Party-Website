@@ -57,6 +57,7 @@ height: 100vh;
     font-size: 30px;
     color: black;
     left: 0;
+    position: fixed;
       /* for nav bar 250 */
     z-index: 99999px;
 }
