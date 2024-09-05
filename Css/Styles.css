@@ -4,7 +4,22 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+.NavBar{
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    display: none;
+}
+.Xmark{
+font-size: 20px;
+color: white;
+transition: 0.5s all;
+}
+.Xmark:hover{
+    color: rgba(224, 54, 54, 0.594);
+}
 .Home{
 background-image: url("../images/events-heavenly-header.jpg");
 background-size: cover;
@@ -13,6 +28,21 @@ background-repeat: no-repeat;
 background-position: center center;
 height: 100vh;
 
+}
+.link{
+    padding: 25px;
+    margin: 15px;
+}
+.link a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.5s;
+    display: none;
+    
+}
+.link a:hover{
+    color: rgba(224, 54, 54, 0.594);
 }
 
 .HomeCover{
@@ -25,8 +55,10 @@ height: 100vh;
 }
 .iconnav{
     font-size: 30px;
-    color: black;
-    left: 2px;
+    color: rgb(196, 186, 186);
+    left: 0;
+      /* for nav bar 250 */
+    position: relative;
     z-index: 99999px;
 }
 

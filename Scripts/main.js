@@ -11,8 +11,27 @@
 // })
 
 $('.iconnav').click(function(){
-    alert("hello");
-})
+    $(".NavBar").animate({
+        width: '230px'
+    }).show();
+    $(".Xmark").show(); 
+    $(".link a").show();
+    $(".iconnav").animate({
+        left: '230px'
+    });
+});
+$(".Xmark").click(function(){
+    $(".NavBar").animate({
+        width: '0px'
+    });
+    $(".Xmark").hide(); 
+    $(".link a").hide();
+
+    $(".iconnav").animate({
+        left: '0px' // Move back to 0 when closing the NavBar
+    });
+});
+
 
 //Singer details
 $(".singernumbers").click(function(){
@@ -45,8 +64,8 @@ function CountDown(PartyDate)
         CountDown(PartyDate);
       }, 1000);
 }
-// CountDown(PartyDate);
-// clearInterval(CountDown);
+CountDown(PartyDate);
+clearInterval(CountDown);
 
  let text = document.getElementById("TextArea");
  let Hundred ;
@@ -71,3 +90,10 @@ function CountDown(PartyDate)
 }
 
 countChars(); //
+
+$("a[href^='#']").click(function(e){
+    let linkHref=$(e.target).attr('href');
+    $(linkHref).offset().animate({scrollTop:0},1000);
+    console.log(linkHref)
+})
+
