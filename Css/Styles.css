@@ -53,12 +53,11 @@ height: 100vh;
 .HomeText h2{
     font-size: 60px;
 }
-.iconnav{
+.iconnav i{
     font-size: 30px;
     color: black;
     left: 0;
       /* for nav bar 250 */
-
     z-index: 99999px;
 }
 
